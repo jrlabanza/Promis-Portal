@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "OSPI-PORTAL";
+    Layout = "~/Views/Shared/_Modal.cshtml";
+}
+<script>
+    var newsID = url.substring(url.lastIndexOf("newsID=") + 7);
+</script>
+<div class="row">
+    <div class="card">
+        <div class="col s12">
+            <img class="materialboxed responsive-img" id="broadcast-image" src="" style="height:500px; margin: auto">
+        </div>
+    </div>
+</div>
+<div class="container" style="background-color:white; height:100%;">
+    <div class="container">
+        <div class="card blue-grey darken-1" style="border-left:solid;border-left-color:blue"><h3 class="white-text" style="margin:auto;"><i id="broadcast-header"></i></h3></div>
+        <div class="divider"></div>
+        <textarea id="broadcast-body" class="materialize-textarea" rows="10" style="height:100%" readonly></textarea>
+        <div id="add-hyperlink"></div>
+        <div class="divider" style="margin:30px"></div>
+    </div>
+</div>

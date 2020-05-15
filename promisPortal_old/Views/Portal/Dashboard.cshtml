@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "OSPI-PORTAL";
+    ViewBag.Redirect = "reportSystem";
+    Layout = "~/Views/Shared/_Modal.cshtml";
+}
+@*<div class="parallax-container">
+    <div class="parallax"></div>
+</div>*@
+<img src="~/assets/imgs/NASDAQ_ON.png" style="height:150px; width:100%; object-fit:cover;">
+
+<div class="row">
+    <div class="col s8">
+        <div class="card" style="border-left:solid;border-left-color:blue">
+            <div class="card-content">
+                <span class="card-title">
+                    OSPI Tarlac Broadcast
+                </span>
+                <div class="slider">
+                    <ul class="slides" id="add-slides">
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col s4">
+        <div class="card blue-grey darken-1" style="border-left:solid;border-left-color:blue">
+            <div class="card-content white-text">
+                <input id="daily-date" class="input" style="text-align:center; font-size:34px; color:white;" disabled>
+            </div>
+        </div>
+        <div class="card" style="border-left:solid;border-left-color:blue">
+            <div class="card-content">
+                <div class="card-title">SAFETY CALENDAR</div>
+                <p class="safety-message"></p>
+            </div>
+        </div>
+        <div class="card" style="border-left:solid;border-left-color:blue">
+            <div class="card-content">
+                <div class="card-title">QUALITY CALENDAR</div>
+                <p class="quality-message"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col s12 divider"></div>
+
+
+

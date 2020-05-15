@@ -1,0 +1,117 @@
+html {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+.reports-list-tb{
+    margin-top: 20px;
+}
+
+.tb-img img{
+    width: 130px;
+    height: auto;
+    margin: 0;
+}
+
+table tr th{
+    width: 10%;
+}
+
+
+header, main, footer {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+    padding-left: 0;
+    }
+}
+
+body {
+background-color:#e8f5e9;
+}
+/*.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}*/
+
+.parallax-container {
+    height:170px;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax img {
+    max-height: 140%; /* or a little bit higher */
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .parallax img {
+    max-height: 250%; /* or higher percentages. It's up to your taste */
+  }
+}
+
+.tap-target {
+    border-radius: 40%;
+}
+
+.input-field input[type="text"], .input-field input[type="password"], .input-field textarea {
+    background: #EEE;
+    border-radius: 3px;
+}
+
+.tabs .tab a.tab-safety-color-1:hover, .tabs .tab a.active.tab-safety-color-1,.tabs .tab a.tab-quality-color-1:hover, .tabs .tab a.active.tab-quality-color-1 {
+
+    background-color: transparent;
+    color: blue;
+
+}
+
+.tabs .tab a.tab-safety-color-2:hover, .tabs .tab a.active.tab-safety-color-2,.tabs .tab a.tab-quality-color-2:hover, .tabs .tab a.active.tab-quality-color-2 {
+
+    background-color: transparent;
+    color: red;
+
+}
+
+.tabs .tab a.tab-safety-color-1:focus, .tabs .tab a:focus.tab-safety-color-1.active,.tabs .tab a.tab-quality-color-1:focus, .tabs .tab a:focus.tab-quality-color-1.active {
+
+    background-color: #c8e6c9;
+}
+
+.tabs .tab a.tab-safety-color-2:focus, .tabs .tab a:focus.tab-safety-color-2.active,.tabs .tab a.tab-quality-color-2:focus, .tabs .tab a:focus.tab-quality-color-2.active {
+
+    background-color: #ffd6da;
+}
+
+.tabs .indicator {
+    background-color: lightgrey;
+}
+
+.card{
+    border-left:solid;
+    border-bottom:solid;
+    border-left-color:#a5d6a7 ;
+    border-bottom-color:#a5d6a7 ;
+}
+
+.btn {
+  overflow: hidden;
+}
+.btn:hover:before {
+  opacity:1;
+}
+
+.btn:before {
+    content: '';
+    opacity: 0;
+    background-color: #66bb6a;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: opacity .2s;
+    z-index: -1;
+}

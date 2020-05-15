@@ -1,0 +1,383 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="modal1" class="modal small" style="width:600px;">
+    <div class="modal-content">
+        <h4>EQUIPMENT STATUS</h4>
+        <div class="row">
+            <div class="card col s4" style="border-left:solid;border-left-color:blue;height:260px;">
+                <div class="card-content">
+                    <span class="card-title">
+                        LSI-ASSY
+                    </span>
+                    <ul>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws013.ad.onsemi.com:8101/promis/folStatus">FOL</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws013.ad.onsemi.com:8101/promis/eolStatus">EOL</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card col s4" style="border-left:solid;border-left-color:blue;height:260px;">
+                <div class="card-content">
+                    <span class="card-title">
+                        LSI-FT
+                    </span>
+                    <ul>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Equipt_Status_ED.aspx">ALL</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Equipt_Status_ED_SW.aspx">SW</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Equipt_Status_ED_NW.aspx">NW</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws013.ad.onsemi.com:8102/promis/wlpStatus">TNR</a></li>
+						<li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws013.ad.onsemi.com:4600/promis/biStatus">BI</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card col s4" style="border-left:solid;border-left-color:blue;height:260px;">
+                <div class="card-content">
+                    <span class="card-title">
+                        QFN-FT
+                    </span>
+                    <ul>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Equipt_Status_ED_XFN.aspx">QFN-FT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal2" class="modal small" style="width:600px;">
+    <div class="modal-content">
+        <h4>EQUIPMENT REPORTS</h4>
+        <div class="row">
+            <div class="card col s6" style="border-left:solid;border-left-color:blue;height:300px;">
+                <div class="card-content">
+                    <span class="card-title">
+                        LSI-ASSY
+                    </span>
+                    <ul>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com:8080/ViewEquiptSetupHistory2_e.aspx">HISTORY</a></li>
+                        @*<li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="#">DOWNVIEWER</a></li>*@
+                    </ul>
+                </div>
+            </div>
+            <div class="card col s6" style="border-left:solid;border-left-color:blue;height:300px;">
+                <div class="card-content">
+                    <span class="card-title">
+                        LSI-FT
+                    </span>
+                    <ul>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/View_Site_Util.aspx">DUT SITE ENTITLEMENT</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/ViewEquiptSetupHistory2_e.aspx">HISTORY</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Equipt_Down_Viewer.aspx">DOWN VIEWER</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue; font-size:14px;" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Tester_OYM_Daily_OEE_and_Losses3.aspx">OYM AND OEE LOSSES</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue; font-size:12px;" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Tester_Daily_Availability_and_Losses.aspx">AVAILABILITY AND LOSSES</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal3" class="modal small" style="width:600px;">
+    <div class="modal-content">
+        <h4>MANUFACTURING</h4>
+        <div class="row">
+            <div class="col s3"></div>
+            <div class="card col s6" style="border-left:solid;border-left-color:blue;height:300px;">
+                <div class="card-content">
+                    <span class="card-title">
+                        LSI-ASSY
+                    </span>
+                    <ul>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/View_Site_Util.aspx">TPR</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/ViewEquiptSetupHistory2_e.aspx">PSIR</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Equipt_Down_Viewer.aspx">GONOGO</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Tester_OYM_Daily_OEE_and_Losses3.aspx">TEST SUMMARY</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s3"></div>
+        </div>
+    </div>
+</div>
+
+<div id="modal4" class="modal small" style="width:600px;">
+    <div class="modal-content">
+        <h4>MANUFACTURING</h4>
+        <div class="row">
+            <div class="col s3"></div>
+            <div class="card col s6" style="border-left:solid;border-left-color:blue;height:300px;">
+                <div class="card-content">
+                    <span class="card-title">
+                        ITV DOWNLOAD
+                    </span>
+                    <ul>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="~/itv/ONtv_Camstar.zip">CAMSTAR</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="~/itv/ONtv_QFN.zip">GENESI</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="~/itv/ONtv_LSI.zip">PRSIM</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s3"></div>
+        </div>
+    </div>
+</div>
+
+<div id="modal5" class="modal small" style="width:600px;">
+    <div class="modal-content">
+        <h4>ADD NEW USER</h4>
+        <div class="row">
+            <div class="col s3"></div>
+            <div class="card col s6" style="border-left:solid;border-left-color:blue;height:300px;">
+                <div class="card-content">
+                    <ul>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Add_User.aspx">FINAL TEST</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com:8080/Add_User.aspx">ASSEMBLY</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s3"></div>
+        </div>
+    </div>
+</div>
+
+<div id="modal6" class="modal small" style="width:600px;">
+    <div class="modal-content">
+        <h4>UPDATE USER</h4>
+        <div class="row">
+            <div class="col s3"></div>
+            <div class="card col s6" style="border-left:solid;border-left-color:blue;height:300px;">
+                <div class="card-content">
+                    <ul>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Update_User_Acc.aspx">FINAL TEST</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com:8080/Update_User_Acc.aspx">ASSEMBLY</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s3"></div>
+        </div>
+    </div>
+</div>
+
+<div id="modal7" class="modal small" style="width:600px;">
+    <div class="modal-content">
+        <h4>RESET PASSWORD</h4>
+        <div class="row">
+            <div class="col s3"></div>
+            <div class="card col s6" style="border-left:solid;border-left-color:blue;height:300px;">
+                <div class="card-content">
+                    <ul>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Reset_Password.aspx">FINAL TEST</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com:8080/Reset_Password.aspx">ASSEMBLY</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s3"></div>
+        </div>
+    </div>
+</div>
+
+<div id="PasswordPage" class="modal small" style="width:600px;">
+    <div class="modal-content">
+        <h4>CHANGE PASSWORD</h4>
+        <div class="row">
+            <div class="col s3"></div>
+            <div class="card col s6" style="border-left:solid;border-left-color:blue;height:300px;">
+                <div class="card-content">
+                    <ul>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/PasswordPage.aspx">FINAL TEST</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com:8080/PasswordPage.aspx">ASSEMBLY</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s3"></div>
+        </div>
+    </div>
+</div>
+
+<div id="modal9" class="modal small" style="width:600px;">
+    <div class="modal-content">
+        <h4>REMOVE USER</h4>
+        <div class="row">
+            <div class="col s3"></div>
+            <div class="card col s6" style="border-left:solid;border-left-color:blue;height:300px;">
+                <div class="card-content">
+                    <ul>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Remove_user.aspx">FINAL TEST</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com:8080/Remove_user.aspx">ASSEMBLY</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s3"></div>
+        </div>
+    </div>
+</div>
+
+<div id="modal8" class="modal">
+    <div class="modal-content">
+        <h4>ADD TARLAC BROADCAST</h4>
+        <div class="row">
+            <div class="card col s12" style="border-left:solid;border-left-color:blue;">
+                <div class="progress">
+                    <div class="indeterminate" hidden></div>
+                </div>
+                <div class="card-content">
+                    <div class="row">
+                        <div class="card-image col s6" style="width:300px">
+                            <img id="image-change" class="materialboxed" src="~/assets/imgs/no-image-available.png">
+                            <a class="btn-floating halfway-fab waves-effect waves-light red" id="browse_image_for_current"><i class="fas fa-plus"></i></a>
+                            <input type="file" class="hide-file-button" id="current_images" multiple hidden onchange="showimagepreview(this)" />
+                        </div>
+                        <div class="col s4">
+                            <div class="row">
+                                <div class="input-field">
+                                    <input placeholder="Placeholder" id="safety-date" type="date" class="validate">
+                                    <label for="safety-date">Enter Expiry of Broadcast</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field">
+                                    <input id="broadcast-title" type="text" class="validate">
+                                    <label for="broadcast-title">Broadcast Title</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="input-field col s12">
+                        <textarea id="safety-message" type="text" class="validate materialize-textarea"></textarea>
+                        <label for="safety-message">Message</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <div class="input-field">
+                            <input id="additional-links" type="text" class="validate">
+                            <label for="additional-links">(OPTIONAL) Additional Links</label>
+                        </div>
+                    </div>
+                    <div class="input-field col s6">
+                        <div class="input-field">
+                            <input id="link-header" type="text" class="validate">
+                            <label for="link-header">(OPTIONAL) Link Header</label>
+                        </div>
+                    </div>
+                    <div class="input-field col s12">
+                        <a class="waves-effect waves-light btn" id="submit-safety-calendar-message" style="float:right">SUBMIT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal10" class="modal" style="width:100%; height:100%;">
+    <div class="modal-content">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <img class="materialboxed" src="~/assets/imgs/no-image-available.png">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div id="modal11" class="modal small" style="width:600px;">
+    <div class="modal-content">
+        <h4>EDIT/RESET SAFETY DAYS</h4>
+        <div class="row">
+            <div class="card col s12" style="border-left:solid;border-left-color:blue;">
+                <div class="progress">
+                    <div class="indeterminate" hidden></div>
+                </div>
+                <div class="card-content">
+                    <div class="row">
+                        <div class="input-field">
+                            <input placeholder="Placeholder" id="current-record-edit" type="text" class="validate">
+                            <label for="safety-date">Edit Current Record</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <input placeholder="Placeholder" id="previous-record-edit" type="text" class="validate">
+                            <label for="safety-date">Edit Previous Record</label>
+                        </div>
+                    </div>
+                    <div class="input-field col s12">
+                        <a class="waves-effect waves-light btn" id="update-safety-days" style="float:left">UPDATE</a>
+                        <a class="waves-effect waves-light btn red" id="reset-safety-days" style="float:right">RESET</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal12" class="modal small" style="width:600px;">
+    <div class="modal-content">
+        <h4>MACHINE MANGEMENT</h4>
+        <div class="row">
+            <div class="col s3"></div>
+            <div class="card col s6" style="border-left:solid;border-left-color:blue;height:300px;">
+                <div class="card-content">
+                    <ul>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Add_Equipt_ID.aspx">ADD EQUIPMENT ID</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Delete_Equipt.aspx">DELETE EQUIPMENT</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Update_Equipt_ID.aspx">UPDATE EQUIPMENT ID</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Add_Package_Line.aspx">ADD PACKAGE LINE</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws011.ad.onsemi.com/Update_Equipt_Loc.aspx">UPDATE EQUIPMENT LOCATION</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s3"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="login_modal" class="modal" style="width:450px">
+    <div class="modal-content">
+        <h4>LOGIN</h4>
+        <div class="container" style="margin-top:50px">
+            <div class="input-field col s6">
+                <input id="icon_prefix" type="text" class="validate username">
+                <label for="icon_prefix">Username</label>
+            </div>
+            <div class="input-field col s6" style="margin-top:20px">
+                <input id="icon_telephone" type="password" class="validate password">
+                <label for="icon_telephone">Password</label>
+            </div>
+            <div class="col s12 divider"></div>
+            <div class="input-field col s6" style="margin-top:20px">
+                <a class="waves-effect waves-light btn" style="width:100%" id="log-in">LOG-IN</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+@*<div id="modal12" class="modal small" style="width:300px;">
+    <div class="modal-content">
+        <h4>REPORT SYSTEM</h4>
+        <div class="row">
+            <div class="card col s12" style="border-left:solid;border-left-color:blue;height:300px;">
+                <div class="card-content">
+                    <span class="card-title">
+                        LSI-FT
+                    </span>
+                    <ul>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws014.ad.onsemi.com/fthrdr/">Loadboard</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws014.ad.onsemi.com/fthrdr/tester-repair-report-index.php">Tester</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws014.ad.onsemi.com/fthrdr/sl-index.php">Speed Loss</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws014.ad.onsemi.com/fthrdr/bib-index.php">Burn In Board</a></li>
+                        <li><a class="btn waves-effect waves-light col s12" style="border-left:solid;border-left-color:blue" target="_blank" href="http://phsm01ws014.ad.onsemi.com/fthrdr/ext-index.php">External Baord</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+
+@RenderBody()

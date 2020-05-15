@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="~/assets/materialize/css/materialize.min.css" media="screen,projection" />
+
+    <link type="text/css" rel="stylesheet" href="~/assets/css/master.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+    var url = window.location.href;
+    var base_url = "@Request.Url.GetLeftPart(UriPartial.Authority)@Url.Content("~")";
+    var get_url = window.location.pathname;
+    var compare_url = get_url.substring(get_url.lastIndexOf('/') + 1);
+    </script>
+
+
+
+</head>
+<body>
+    <header>
+        <!-- SIDEBAR NAV-->
+        <div class="container">
+            <ul class="sidenav sidenav-fixed blue lighten-5" style="max-height:100%">
+                <li>
+                    <div class="user-view" style="max-height:64px">
+                        <div class="background">
+                            <img src="~/assets/imgs/1.png">
+                        </div>
+                        <a><img class="circle" src="~/assets/imgs/onlogo.png"></a>
+                    </div>
+                </li>
+                <li style="height:20px"><a class="subheader"></a></li>
+                <ul class="collapsible expandable">
+                    <li><div class="collapsible-header waves-effect" onclick="location.href='../Portal/Dashboard'"><i class=" material-icons">home</i>Home</div></li>
+                    <li><div class="collapsible-header waves-effect" onclick="window.open('http://theconnection.onsemi.com/manufacturing/factory/SSMP/default.aspx', '_blank')"><i class=" material-icons">folder_shared</i>Tarlac Sharepoint</div></li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">build</i>Engineering</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#modal1" class="waves-effect active modal-trigger">EQUIPMENT STATUS<i class="material-icons">playlist_add</i></a></li>
+                                <li><a href="#modal2" class="waves-effect modal-trigger">EQUIPMENT REPORTS<i class="material-icons">report</i></a></li>
+                                <li><a target="_blank" href="http://phsm01ws013.ad.onsemi.com/EPMV2/index.php" class="waves-effect">EPM<i class="material-icons">warning</i></a></li>
+                                <li><a target="_blank" href="http://phsm01ws011.ad.onsemi.com/View_Site_Util.aspx" class="waves-effect">DUT SITE ENTITLEMENT<i class="material-icons">perm_contact_calendar</i></a></li>
+                                <li><a target="_blank" href="http://phsm01ws011.ad.onsemi.com/Tester_Daily_Availability_and_Losses.aspx" class="waves-effect" style="font-size:12px">TEST MACHINE AVAILABILITY<i class="material-icons">event_busy</i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">developer_board</i>Planning Tools</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="http://phsm01ws013.ad.onsemi.com:4000/DAshboard/OSR" class="waves-effect" target="_blank">OSR<i class="material-icons">format_list_bulleted</i></a></li>
+                                <li><a href="http://eomer:9580/R13/" class="waves-effect">R-13<i class="material-icons">rotate_90_degrees_ccw</i></a></li>
+                                <li><a target="_blank" href="http://exman.onsemi.com/SSMP/" class="waves-effect">BEPP<i class="material-icons">screen_share</i></a></li>
+                                <li><a href="http://ospi-fastsvr.ad.onsemi.com:4280/CapacityMgmt/jsp/Login.jsp" class="waves-effect">TCM<i class="material-icons">disc_full</i></a></li>
+                                <li><a href="http://phsm01ws014.ad.onsemi.com/forecast/index.html" class="waves-effect modal-trigger" target="_blank">LSI TEST FORECAST<i class="material-icons">pin_drop</i></a></li>
+                                <li><a target="_blank" href="" class="waves-effect">QFN ASSY FORECAST<i class="material-icons">pin_drop</i></a></li>
+                                <li><a target="_blank" href="http://phsm01ws014.ad.onsemi.com/lbandprlist/index.html" class="waves-effect" style="font-size:13px">LSI LB AND PROJECT PR LIST<i class="material-icons">playlist_add</i></a></li>
+                                <li><a target="_blank" href="http://phsm01ws014.ad.onsemi.com/hwandprlist/index.html" class="waves-effect" style="font-size:13px">LSI HQ AND PROJECT PR LIST<i class=" material-icons">playlist_add</i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">playlist_add_check</i>Checksheets</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="http://phsm01ws014.ad.onsemi.com/tpr/" class="waves-effect active">TPR<i class="material-icons">build</i></a></li>
+                                <li><a href="http://phsm01ws014.ad.onsemi.com/gonogo/" class="waves-effect active">GONOGO<i class="material-icons">build</i></a></li>
+                                <li><a href="http://phsm01ws014.ad.onsemi.com/psir/" class="waves-effect active">PSIR<i class="material-icons">build</i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">low_priority</i>Machine Matrix</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a target="_blank" href="http://phsm01ws014.ad.onsemi.com/DTM/system/searchTesterMatrix.php" class="waves-effect active">MACHINE MATRIX<i class="material-icons">pan_tool</i></a></li>
+                                <li><a target="_blank" href="" class="waves-effect">IBMS<i class="material-icons">list</i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">dashboard</i>Inventory Systems</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a target="_blank" href="http://phsm01ws014.ad.onsemi.com:7000/Home/Index " class="waves-effect active">KITS<i class="material-icons">build</i></a></li>
+                                <li><a target="_blank" href="http://phsm01ws014.ad.onsemi.com/cents/" class="waves-effect active">CENTS<i class="material-icons">web</i></a></li>
+                                <li><a target="_blank" href="http://phsm01ws014.ad.onsemi.com/lrms/system/lotRackMain.php" class="waves-effect">LOT RACK MANAGEMENT<i class="material-icons">art_track</i></a></li>
+                                <li><a target="_blank" href="http://phsm01ws012.ad.onsemi.com:3000/#/" class="waves-effect active">OMS<i class="material-icons">web</i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">people</i>HR Tools</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="http://phsm01ws014.ad.onsemi.com/sob/login.php" class="waves-effect active" target="_blank">SOB<i class="material-icons">star</i></a></li>
+                                <li><a href="https://www2.mypayroll.ph/login" class="waves-effect active" target="_blank">MYPAYROLL<i class="material-icons">attach_money</i></a></li>
+                                <li><a href="https://onsemi.sabacloud.com/Saba/Web_spf/PRODTNT055/app/dashboard" class="waves-effect active" target="_blank">SABA<i class="material-icons">web</i></a></li>
+                                <li><a href="https://hctz.fa.us2.oraclecloud.com/fscmUI/faces/FuseWelcome?_afrLoop=6408046406514995&fnd=%3B%3B%3B%3Bfalse%3B256%3B%3B%3B&_adf.ctrl-state=w4fwtinmw_89" class="waves-effect active" target="_blank">MAPS<i class="material-icons">map</i></a></li>
+                                <li><a href="https://lms.onsemi.com:4413/lms-prod/login" class="waves-effect active" target="_blank">LMS<i class="material-icons">book</i></a></li>
+                                <li><a href="https://onsemi.skillport.com/skillportfe/" class="waves-effect active" target="_blank">SKILLSOFT<i class="material-icons">book</i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">spellcheck</i>QA Tools</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                @*<li><a target="_blank" href="http://phsm01ws014.ad.onsemi.com/equality/" class="waves-effect active">E-QUALITY<i class="material-icons">web</i></a></li>
+                                <li><a target="_blank" href="http://phsm01ws014.ad.onsemi.com/E-DOCS/" class="waves-effect">E-DOCS<i class="material-icons">list</i></a></li>*@
+                                <li><a target="_blank" href="http://phsm01ws014.ad.onsemi.com/E-DOCS/" class="waves-effect">E-DOCS<i class="material-icons">book</i></a></li>
+                                <li><a target="_blank" href="http://docs.onsemi.com/docserver/index.do" class="waves-effect">DOC SERVER<i class="material-icons">computer</i></a></li>
+                                <li><a target="_blank" href="http://myonweb.onsemi.com/?appId=ICAR" class="waves-effect">ICAR<i class="material-icons">check</i></a></li>
+                                <li><a target="_blank" href="http://myonweb.onsemi.com/?appId=SCAN" class="waves-effect active">SCAN<i class="material-icons">perm_scan_wifi</i></a></li>
+                                <li><a target="_blank" href="https://myse01ls014.onsemi.com:8453/onpams-prod/" class="waves-effect">FA<i class="material-icons">playlist_add_check</i></a></li>
+                                <li><a target="_blank" href="http://myonweb.onsemi.com/?appId=CAB" class="waves-effect">CAB<i class="material-icons">call_to_action</i></a></li>
+                                <li><a target="_blank" href="https://plm.onsemi.com/Agile/default/login-cms.jsp" class="waves-effect">AGILE<i class="material-icons">list</i></a></li>
+                                <li><a target="_blank" href="http://mfgonline.onsemi.com/QCIPage/Mpemain.html" class="waves-effect">MPE<i class="material-icons">list</i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">description</i>NPI/EBR Tools</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a target="_blank" href="http://ebr.onsemi.com/ebr-prod/login" class="waves-effect active">G EBR<i class="material-icons">web</i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">settings_input_composite</i>CAMSTAR</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a target="_blank" href="http://phsm01ws014.ad.onsemi.com:8181/" class="waves-effect active">ATSS<i class="material-icons">web</i></a></li>
+                                <li><a target="_blank" href="http://tlphprd/CamstarPortal/Default.aspx" class="waves-effect">CAMSTAR PRD<i class="material-icons">list</i></a></li>
+                                @*<li><a target="_blank" href="http://tlphtrn/CamstarPortal/Default.aspx" class="waves-effect">CAMSTAR TRN<i class="material-icons">dashboard</i></a></li>
+                                <li><a target="_blank" href="http://tlphqa/CamstarPortal/Default.aspx" class="waves-effect">CAMSTAR QA<i class="material-icons">chat</i></a></li>
+                                <li><a target="_blank" href="http://tlphdev/CamstarPortal/Default.aspx" class="waves-effect">CAMSTAR DEV<i class="material-icons">dashboard</i></a></li>*@
+                                <li><a target="_blank" href="http://sbn1biprd:8080/BOE/BI" class="waves-effect">BI LAUNCH PAD<i class="material-icons">list</i></a></li>
+                                <li><a target="_blank" href="http://tlphbiprd.ad.onsemi.com/CamstarLotTracking/Forms/ShopOrder/Default" class="waves-effect">SHOP ORDER<i class="material-icons">add_shopping_cart</i></a></li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">airplay</i>E-Systems</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a target="_blank" href="http://phsm01ws014.ad.onsemi.com/ESS/" class="waves-effect active">E-SAFETY<i class="material-icons"><img src="~/assets/imgs/safety-icon.ico" alt="Alternate Text" height="25" width="25" /></i></a></li>
+                                <li><a target="_blank" href="http://phsm01ws014.ad.onsemi.com/equality/" class="waves-effect">E-QUALITY<i class="material-icons"><img src="~/assets/imgs/equality.ico" alt="Alternate Text" height="25" width="25" /></i></a></li>
+                                <li><a target="_blank" href="http://phsm01ws014.ad.onsemi.com:2828/Home/Index" class="waves-effect">E-SAVINGS<i class="material-icons"><img src="~/assets/imgs/philippine-peso.png" alt="Alternate Text" height="25" width="25" /></i></a></li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">airplay</i>IT Tools</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a target="_blank" href="http://atomsvr/ATOM_SYSTEM/default.asp" class="waves-effect">ATOM DB MAINTENANCE<i class="material-icons">list</i></a></li>
+                                <li><a target="_blank" href="http://10.153.213.15/~phoenixmgr/mainteDB/index.php" class="waves-effect">PHOENIX DB<i class="material-icons">dashboard</i></a></li>
+                                <li><a target="_blank" href="http://mboi.onsemi.com/cgi-bin/exman/mboi_globalV2.pl?Factory=PHM" class="waves-effect">MBOI<i class="material-icons">chat</i></a></li>
+                                <li><a target="_blank" href="http://newton.onsemi.com/" class="waves-effect">NEWTON<i class="material-icons">list</i></a></li>
+                                <li><a target="_blank" href=" http://itsupport.onsemi.com/EndUserPortal.jsp" class="waves-effect">SYSAID<i class="material-icons"><img src="~/assets/imgs/ITicon.ico" alt="Alternate Text" height="25" width="25" /></i></a></li>
+                                <li><a target="_blank" href="http://jira.onsemi.com/secure/Dashboard.jspa" class="waves-effect">JIRA<i class="material-icons">list</i></a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">insert_chart</i>Lot Reports</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a target="_blank" href="http://libra02/PRISMHoldLots/hold_lots_summary.htm" class="waves-effect active">HOLD LOTS<i class="material-icons">web</i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">access_time</i>IE Tools</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a target="_blank" href="http://ospi-fastsvr.ad.onsemi.com:4280/CapacityMgmt/jsp/Login.jsp" class="waves-effect active">CAPACITY MANAGEMENT<i class="material-icons">web</i></a></li>
+                                <li><a target="_blank" href="#modal4" class="waves-effect modal-trigger">DOWNLOAD iTV<i class="material-icons">list</i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect"><i class="material-icons">person</i>Administrator</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a target="_blank" href="#modal5" class="waves-effect active modal-trigger">ADD NEW USER<i class="material-icons">web</i></a></li>
+                                <li><a target="_blank" href="#modal6" class="waves-effect modal-trigger">UPDATE USER<i class="material-icons">list</i></a></li>
+                                <li><a target="_blank" href="#modal7" class="waves-effect modal-trigger">RESET PASSWORD<i class="material-icons">dashboard</i></a></li>
+                                <li><a target="_blank" href="#modal9" class="waves-effect modal-trigger">REMOVE USER<i class="material-icons">dashboard</i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <li><div class="collapsible-header waves-effect" onclick="location.href='dashboard'"><i class="material-icons">lightbulb_outline</i>One Point Lesson</div></li>
+                <li><div class="collapsible-header waves-effect" onclick="location.href='about'"><i class="material-icons">info</i>About</div></li>
+                <li><div style="color:white; background-image:url(../assets/imgs/1.png)">APPLICATIONS ENGINEERING ©2019</div></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+         @RenderBody()
+        @if (ViewBag.employeeData != null)
+        {
+            <div class="fixed-action-btn click-to-toggle">
+                <a class="btn-floating btn-large red">
+                    <i class="large material-icons">mode_edit</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating yellow darken-1 tooltipped" id="logout_user" data-position="top" data-tooltip="Log-out"><i class="material-icons">keyboard_return</i></a></li>
+                    <li><a class="btn-floating red tooltipped modal-trigger" href="#modal8" data-position="top" data-tooltip="Add Tarlac Broadcast"><i class="material-icons">chat</i></a></li>
+                    
+                </ul>
+            </div>
+        }
+        else
+        {
+            <div class="fixed-action-btn click-to-toggle">
+                <a id="menu" class="btn-floating btn-large blue pulse" onclick="$('.tap-target').tapTarget('open');">
+                    <i class="large material-icons">menu</i>
+                </a>
+                <div class="tap-target white" data-target="menu">
+                    <div class="tap-target-content" style="">
+                        <div class="input-field col s6">
+                            <input id="icon_prefix" type="text" class="validate username">
+                            <label for="icon_prefix">Username</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="icon_telephone" type="password" class="validate password">
+                            <label for="icon_telephone">Password</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <a class="waves-effect waves-light btn" id="log-in" style="float:right">LOG-IN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </main>
+    <footer>
+        <script type="text/javascript" src="~/assets/js/jquery.js"></script>
+        <script type="text/javascript" src="~/assets/materialize/js/materialize.min.js"></script>
+        <script type="text/javascript" src="~/assets/js/index.js"></script>
+        <script type="text/javascript" src="~/assets/js/Login.js"></script>
+        <script type="text/javascript" src="~/assets/js/submit.js"></script>
+        <script type="text/javascript" src="~/assets/js/materialize-initialize.js"></script>
+    </footer>
+</body>
+</html>

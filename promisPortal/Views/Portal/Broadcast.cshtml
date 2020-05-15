@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "OSPI-PORTAL";
+    Layout = "~/Views/Shared/_Modal.cshtml";
+}
+
+
+<div class="container" style="background-color:white; height:100%;">
+    <div class="container">
+        <div class="row">
+            <div class="col 6">
+                <div class="card blue-grey darken-1" style="border-left:solid;border-left-color:blue"><h3 class="white-text" style="margin:auto;"><i id="broadcast-header"></i></h3></div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <textarea id="broadcast-body" class="materialize-textarea" rows="10" style="height:100%" readonly></textarea>
+    </div>
+    <div class="col 6">
+        <div class="card">
+            <div class="col s12">
+                <img class="materialboxed responsive-img" id="broadcast-image" src="" style="margin: auto; height: 100%; width: 100%">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <div id="add-hyperlink"></div>
+        </div>
+        <div class="col s6">
+            <div id="add-additional-attachment"></div>
+        </div>
+    </div>
+</div>

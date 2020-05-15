@@ -1,0 +1,180 @@
+﻿@{
+    ViewBag.Title = "OSPI-PORTAL";
+    ViewBag.Redirect = "reportSystem";
+    Layout = "~/Views/Shared/_Modal.cshtml";
+}
+@*<div class="parallax-container">
+    <div class="parallax"></div>
+</div>*@
+<img src="~/assets/imgs/NASDAQ_ON.png" style="height:5%; width:100%; object-fit:cover;">
+<div class="row">
+    <div class="col s12 m6 l7">
+        <div class="card z-depth-0">
+            <div class="card-content">
+                <span class="card-title">
+                    OSPI Tarlac Broadcast
+                </span>
+                <div class="slider">
+                    <ul class="slides" id="add-slides"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l6">
+                <div class="card z-depth-0">
+                    <div class="card-content">
+                        <div class="card-title">SAFETY CALENDAR</div>
+                    </div>
+                    <div class="card-tabs">
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab"><a href="#test1" class="tab-safety-color-1" style="color:green">Question</a></li>
+                            <li class="tab"><a href="#test2" class="tab-safety-color-2" style="color:red">Answer</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-content tab-safety-message" style="background-color:#e8f5e9;">
+                        <div id="test1"><p class="safety-message"></p></div>
+                        <div id="test2"><p class="safety-answer"></p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l6">
+                <div class="card z-depth-0">
+                    <div class="card-content">
+                        <div class="card-title">QUALITY CALENDAR</div>
+
+                    </div>
+                    <div class="card-tabs">
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab"><a href="#test3" class="tab-quality-color-1" style="color:green">Question</a></li>
+                            <li class="tab"><a href="#test4" class="tab-quality-color-2" style="color:red">Answer</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-content tab-quality-message" style="background-color:#e8f5e9;">
+                        <div id="test3"><p class="quality-message"></p></div>
+                        <div id="test4"><p class="quality-answer"></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m6 l5">
+        <div class="card green darken-4 z-depth-0">
+            <div class="card-content white-text">
+                <input id="daily-date" class="input" style="text-align:center; font-size:2em; color:white;" disabled>
+            </div>
+        </div>
+        <div class="card z-depth-0">
+            <div class="card-content">
+                @*<div class="card-title">QUALITY CALENDAR</div>*@
+                <p class="" style="text-align:center">
+                    This company has worked
+                </p>
+                <h5 style="text-align:center"><u><span id="current-record"></span></u></h5>
+                <p style="text-align:center">
+                    days without a lost time accident. The best previous record was
+                </p>
+                <h5 style="text-align:center"><u><span id="previous-record"></span></u></h5>
+                <p style="text-align:center">
+                    days. <b> DO YOUR PART!</b> help make a New Record!
+                </p>
+            </div>
+        </div>
+        <div class="card z-depth-0">
+            <div class="card-content">
+                <div class="card-title">
+                    OSPI Campaigns
+                </div>
+                <div class="rvs-container">
+                    <div class="rvs-item-container">
+                        <div class="rvs-item-stage">
+                            <div class="rvs-item" style="background-image: url(../../assets/vid/e-savings-2.png)">
+                                <p class="rvs-item-text">E-Savings Campaign<small>by OSPI-Tarlac</small></p>
+                                <a href="~/assets/vid/E-Savings Season 2-1.m4v" class="rvs-play-video"></a>
+                            </div>
+                            <div class="rvs-item" style="background-image: url(../../assets/vid/e-safety.png)">
+                                <p class="rvs-item-text">E-Safety Campaign<small>by OSPIT-Tarlac</small></p>
+                                <a href="~/assets/vid/e-safety.m4v" class="rvs-play-video"></a>
+                            </div>
+                            <div class="rvs-item" style="background-image: url(../../assets/vid/e-savings.png)">
+                                <p class="rvs-item-text">E-Savings Campaign<small>by OSPI-Tarlac</small></p>
+                                <a href="~/assets/vid/e-savings.mp4" class="rvs-play-video"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rvs-nav-container">
+                        <a class="rvs-nav-prev"></a>
+                        <div class="rvs-nav-stage">
+                            <a class="rvs-nav-item">
+                                <span class="rvs-nav-item-thumb" style="background-image: url(../../assets/vid/e-savings-2.png)"></span>
+                                <h4 class="rvs-nav-item-title">E-Savings Campaign 2</h4>
+                                <small class="rvs-nav-item-credits">by OSPI-Tarlac</small>
+                            </a>
+                            <a class="rvs-nav-item">
+                                <span class="rvs-nav-item-thumb" style="background-image: url(../../assets/vid/e-safety.png)"></span>
+                                <h4 class="rvs-nav-item-title">E-Safety Campaign</h4>
+                                <small class="rvs-nav-item-credits">by OSPI-Tarlac</small>
+                            </a>
+                            <a class="rvs-nav-item">
+                                <span class="rvs-nav-item-thumb" style="background-image: url(../../assets/vid/e-safety.png)"></span>
+                                <h4 class="rvs-nav-item-title">E-Savings Campaign</h4>
+                                <small class="rvs-nav-item-credits">by OSPI-Tarlac</small>
+                            </a>
+                        </div>
+                        <a class="rvs-nav-next"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col s12 divider"></div>
+<div class="col s12 divider"></div>
+
+<footer class="page-footer green darken-4 z-depth-0" style="padding-left:0px">
+    <div class="container">
+        <div style="margin-left:10px; margin-right:10px">
+            <div class="company-details col s12">
+                <div class="row">
+                    <div class="col s12">
+                        <h5>About the Company</h5>
+                        <p>
+                            ON Semiconductor (Nasdaq: ON) is driving energy efficient innovations, empowering customers to reduce global energy use. The company is a leading supplier of semiconductor-based solutions, offering a comprehensive portfolio of energy efficient power management, analog, sensors, logic, timing, connectivity, discrete, SoC and custom devices. The company's products help engineers solve their unique design challenges in automotive, communications, computing, consumer, industrial, medical, aerospace and defense applications. ON Semiconductor operates a responsive, reliable, world-class supply chain and quality program, a robust compliance and ethics program, and a network of manufacturing facilities, sales offices and design centers in key markets throughout North America, Europe and the Asia Pacific regions.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s4">
+                        <h5>Our Vision</h5>
+                        <p>
+                            To be the trusted supplier of choice for energy efficient electronics innovations.
+                        </p>
+                    </div>
+                    <div class="col s4">
+                        <h5>Our Mission</h5>
+                        <p>
+                            We deliver high quality, energy efficient semiconductor solutions that enable customer innovations through a diverse workforce committed to operating in an ethical and socially responsible manner.
+                        </p>
+                    </div>
+                    <div class="col s4">
+                        <h5>Global Quality Policy</h5>
+                        <p>
+                            We will exceed customer expectations with our superior products and services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            APPLICATIONS ENGINEERING© 2020 (LOCAL: 4100)
+            <a class="grey-text text-lighten-4 right" href="http://phsm01ws014.ad.onsemi.com:3000/" target="_blank">STARS</a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
