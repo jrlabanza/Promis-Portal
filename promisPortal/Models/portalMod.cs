@@ -30,6 +30,15 @@ namespace promisPortal.Models
             return results;
         }
 
+        public List<IDictionary<string, string>> getCovidCalendar(string day)
+        {
+
+            List<IDictionary<string, string>> results = new List<IDictionary<string, string>>();
+            string query = "SELECT id,covidMessage,covidAnswers FROM covid_safety WHERE date = '" + day + "';";
+            results = Connection.GetDataAssociateArray(query, "GET SAFETY CALENDAR DATA", Connection.portal_connString);
+            return results;
+        }
+
         public IDictionary<string, string> getSafetyDays()
         {
 

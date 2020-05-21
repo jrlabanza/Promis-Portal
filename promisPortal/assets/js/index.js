@@ -132,6 +132,26 @@ function refreshContent() {
     );
 
     $.post(
+    base_url + "Portal/getCovidCalendar",
+    {
+        "day":day
+    },
+    function (data) {
+        var message = "";
+        var answer = "";
+        $.each(data, function (i, safety_data) {
+ 
+            message = safety_data.covidMessage;
+            answer = safety_data.covidAnswers;
+            $(".covid-message").html(message);
+            $(".covid-answer").html(answer);
+            
+        });
+
+    }
+);
+
+    $.post(
         base_url + "Portal/getSafetyDays",
         function (data) {
             $("#previous-record").html(data.previous_record);
@@ -231,6 +251,14 @@ $(document).on("click", ".tabs", function () {
 
     if ($(".tab-quality-color-2").hasClass("active") == true) {
         $(".card-content.tab-quality-message").css("background-color", "#FFEBEE")
+    }
+
+    if ($(".tab-covid-color-1").hasClass("active") == true) {
+        $(".card-content.tab-covid-message").css("background-color", "#e8f5e9")
+    }
+
+    if ($(".tab-covid-color-2").hasClass("active") == true) {
+        $(".card-content.tab-covid-message").css("background-color", "#FFEBEE")
     }
 })
 

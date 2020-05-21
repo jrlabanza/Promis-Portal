@@ -22,6 +22,7 @@
         noWrap: true
 
     });
+    $('.tabs').tabs();
 
     
 });

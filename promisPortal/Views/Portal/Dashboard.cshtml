@@ -7,51 +7,71 @@
     <div class="parallax"></div>
 </div>*@
 <img src="~/assets/imgs/NASDAQ_ON.png" style="height:5%; width:100%; object-fit:cover;">
-<div class="row">
+<div class="row" style="margin-bottom:0px;">
     <div class="col s12 m6 l7">
         <div class="card z-depth-0">
-            <div class="card-content">
-                <span class="card-title">
-                    OSPI Tarlac Broadcast
-                </span>
-                <div class="slider">
-                    <ul class="slides" id="add-slides"></ul>
-                </div>
+            <div class="card-tabs">
+                <ul class="tabs">
+                    <li class="tab col s3">
+                        <a href="#broadcast-showcase" class="active broadcast-showcase-color" style="color:green">
+                            OSPI Tarlac Broadcast
+                        </a>
+                    </li>
+                    <li class="tab col s3">
+                        <a href="#campaign-showcase" class="campaign-showcase-color" style="color:red">
+                            OSPI Campaigns
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="col l6">
-                <div class="card z-depth-0">
-                    <div class="card-content">
-                        <div class="card-title">SAFETY CALENDAR</div>
-                    </div>
-                    <div class="card-tabs">
-                        <ul class="tabs tabs-fixed-width">
-                            <li class="tab"><a href="#test1" class="tab-safety-color-1" style="color:green">Question</a></li>
-                            <li class="tab"><a href="#test2" class="tab-safety-color-2" style="color:red">Answer</a></li>
-                        </ul>
-                    </div>
-                    <div class="card-content tab-safety-message" style="background-color:#e8f5e9;">
-                        <div id="test1"><p class="safety-message"></p></div>
-                        <div id="test2"><p class="safety-answer"></p></div>
+            <div class="card-content" style="height:458px; padding:0px">
+                <div id="broadcast-showcase" class="col s12">
+                    <div class="slider">
+                        <ul class="slides" id="add-slides"></ul>
                     </div>
                 </div>
-            </div>
-            <div class="col l6">
-                <div class="card z-depth-0">
-                    <div class="card-content">
-                        <div class="card-title">QUALITY CALENDAR</div>
+                <div id="campaign-showcase" class="col s12">
+                    <div style="">
+                        <div class="rvs-container rvs-horizontal">
+                            <div class="rvs-item-container">
+                                <div class="rvs-item-stage">
+                                    <div class="rvs-item" style="background-image: url(../../assets/vid/e-savings-2.png)">
+                                        <p class="rvs-item-text">E-Savings Campaign<small>by OSPI-Tarlac</small></p>
+                                        <a href="~/assets/vid/E-Savings Season 2-1.m4v" class="rvs-play-video"></a>
+                                    </div>
+                                    <div class="rvs-item" style="background-image: url(../../assets/vid/e-safety.png)">
+                                        <p class="rvs-item-text">E-Safety Campaign<small>by OSPIT-Tarlac</small></p>
+                                        <a href="~/assets/vid/e-safety.m4v" class="rvs-play-video"></a>
+                                    </div>
+                                    <div class="rvs-item" style="background-image: url(../../assets/vid/e-savings.png)">
+                                        <p class="rvs-item-text">E-Savings Campaign<small>by OSPI-Tarlac</small></p>
+                                        <a href="~/assets/vid/e-savings.mp4" class="rvs-play-video"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rvs-nav-container">
+                                <a class="rvs-nav-prev"></a>
+                                <div class="rvs-nav-stage">
+                                    <a class="rvs-nav-item">
+                                        <span class="rvs-nav-item-thumb" style="background-image: url(../../assets/vid/e-savings-2.png)"></span>
+                                        <h4 class="rvs-nav-item-title">E-Savings Campaign 2</h4>
+                                        <small class="rvs-nav-item-credits">by OSPI-Tarlac</small>
+                                    </a>
+                                    <a class="rvs-nav-item">
+                                        <span class="rvs-nav-item-thumb" style="background-image: url(../../assets/vid/e-safety.png)"></span>
+                                        <h4 class="rvs-nav-item-title">E-Safety Campaign</h4>
+                                        <small class="rvs-nav-item-credits">by OSPI-Tarlac</small>
+                                    </a>
+                                    <a class="rvs-nav-item">
+                                        <span class="rvs-nav-item-thumb" style="background-image: url(../../assets/vid/e-safety.png)"></span>
+                                        <h4 class="rvs-nav-item-title">E-Savings Campaign</h4>
+                                        <small class="rvs-nav-item-credits">by OSPI-Tarlac</small>
+                                    </a>
+                                </div>
+                                <a class="rvs-nav-next"></a>
+                            </div>
+                        </div>
 
-                    </div>
-                    <div class="card-tabs">
-                        <ul class="tabs tabs-fixed-width">
-                            <li class="tab"><a href="#test3" class="tab-quality-color-1" style="color:green">Question</a></li>
-                            <li class="tab"><a href="#test4" class="tab-quality-color-2" style="color:red">Answer</a></li>
-                        </ul>
-                    </div>
-                    <div class="card-content tab-quality-message" style="background-color:#e8f5e9;">
-                        <div id="test3"><p class="quality-message"></p></div>
-                        <div id="test4"><p class="quality-answer"></p></div>
                     </div>
                 </div>
             </div>
@@ -79,57 +99,78 @@
                 </p>
             </div>
         </div>
-        <div class="card z-depth-0">
-            <div class="card-content">
-                <div class="card-title">
-                    OSPI Campaigns
-                </div>
-                <div class="rvs-container">
-                    <div class="rvs-item-container">
-                        <div class="rvs-item-stage">
-                            <div class="rvs-item" style="background-image: url(../../assets/vid/e-savings-2.png)">
-                                <p class="rvs-item-text">E-Savings Campaign<small>by OSPI-Tarlac</small></p>
-                                <a href="~/assets/vid/E-Savings Season 2-1.m4v" class="rvs-play-video"></a>
-                            </div>
-                            <div class="rvs-item" style="background-image: url(../../assets/vid/e-safety.png)">
-                                <p class="rvs-item-text">E-Safety Campaign<small>by OSPIT-Tarlac</small></p>
-                                <a href="~/assets/vid/e-safety.m4v" class="rvs-play-video"></a>
-                            </div>
-                            <div class="rvs-item" style="background-image: url(../../assets/vid/e-savings.png)">
-                                <p class="rvs-item-text">E-Savings Campaign<small>by OSPI-Tarlac</small></p>
-                                <a href="~/assets/vid/e-savings.mp4" class="rvs-play-video"></a>
-                            </div>
-                        </div>
+        <div class="card green darken-4 z-depth-0">
+            <div class="card-content white-text">
+                <div class="row">
+                    <div class="col s2" style="">
+                        <i class="fas fa-phone fa-4x"></i>
                     </div>
-                    <div class="rvs-nav-container">
-                        <a class="rvs-nav-prev"></a>
-                        <div class="rvs-nav-stage">
-                            <a class="rvs-nav-item">
-                                <span class="rvs-nav-item-thumb" style="background-image: url(../../assets/vid/e-savings-2.png)"></span>
-                                <h4 class="rvs-nav-item-title">E-Savings Campaign 2</h4>
-                                <small class="rvs-nav-item-credits">by OSPI-Tarlac</small>
-                            </a>
-                            <a class="rvs-nav-item">
-                                <span class="rvs-nav-item-thumb" style="background-image: url(../../assets/vid/e-safety.png)"></span>
-                                <h4 class="rvs-nav-item-title">E-Safety Campaign</h4>
-                                <small class="rvs-nav-item-credits">by OSPI-Tarlac</small>
-                            </a>
-                            <a class="rvs-nav-item">
-                                <span class="rvs-nav-item-thumb" style="background-image: url(../../assets/vid/e-safety.png)"></span>
-                                <h4 class="rvs-nav-item-title">E-Savings Campaign</h4>
-                                <small class="rvs-nav-item-credits">by OSPI-Tarlac</small>
-                            </a>
-                        </div>
-                        <a class="rvs-nav-next"></a>
+                    <div class="col s10">
+                        <span>
+                            For inquires you can contact APPLICATIONS ENGINEERING (LOCAL: 4100) or email us <a onclick="window.location.href = 'mailto:PH-OSPI Tarlac-APPS <PH-OSPI_Tarlac-APPS@onsemi.com>;';" style="cursor:pointer"><u>Here</u></a>.<br> For Support you may submit thru <a class="" href="http://phsm01ws014.ad.onsemi.com:3000/" target="_blank"><u>STARS.</u></a>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div class="row">
+    <div class="col l4">
+        <div class="card z-depth-0">
+            <div class="card-content">
+                <div class="card-title">SAFETY CALENDAR</div>
+            </div>
+            <div class="card-tabs">
+                <ul class="tabs tabs-fixed-width">
+                    <li class="tab"><a href="#test1" class="tab-safety-color-1 active" style="color:green">Question</a></li>
+                    <li class="tab"><a href="#test2" class="tab-safety-color-2" style="color:red">Answer</a></li>
+                </ul>
+            </div>
+            <div class="card-content tab-safety-message" style="background-color:#e8f5e9;">
+                <div id="test1"><p class="safety-message"></p></div>
+                <div id="test2"><p class="safety-answer"></p></div>
+            </div>
+        </div>
+    </div>
+    <div class="col l4">
+        <div class="card z-depth-0">
+            <div class="card-content">
+                <div class="card-title">DAILY COVID SAFETY TOPIC</div>
+            </div>
+            <div class="card-tabs">
+                <ul class="tabs tabs-fixed-width">
+                    <li class="tab"><a href="#test5" class="tab-covid-color-1 active" style="color:green">Question</a></li>
+                    <li class="tab"><a href="#test6" class="tab-covid-color-2" style="color:red">Answer</a></li>
+                </ul>
+            </div>
+            <div class="card-content tab-covid-message" style="background-color:#e8f5e9;">
+                <div id="test5"><p class="covid-message"></p></div>
+                <div id="test6"><p class="covid-answer"></p></div>
+            </div>
+        </div>
+    </div>
+    <div class="col l4">
+        <div class="card z-depth-0">
+            <div class="card-content">
+                <div class="card-title">QUALITY CALENDAR</div>
+            </div>
+            <div class="card-tabs">
+                <ul class="tabs tabs-fixed-width">
+                    <li class="tab"><a href="#test3" class="tab-quality-color-1 active" style="color:green">Question</a></li>
+                    <li class="tab"><a href="#test4" class="tab-quality-color-2" style="color:red">Answer</a></li>
+                </ul>
+            </div>
+            <div class="card-content tab-quality-message" style="background-color:#e8f5e9;">
+                <div id="test3"><p class="quality-message"></p></div>
+                <div id="test4"><p class="quality-answer"></p></div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<div class="col s12 divider"></div>
-<div class="col s12 divider"></div>
+@*<div class="col s12 divider"></div>
+<div class="col s12 divider"></div>*@
 
 <footer class="page-footer green darken-4 z-depth-0" style="padding-left:0px">
     <div class="container">

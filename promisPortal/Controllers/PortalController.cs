@@ -56,6 +56,13 @@ namespace promisPortal.Controllers
             return Json(results);
         }
 
+        public JsonResult getCovidCalendar(string day)
+        {
+            List<IDictionary<string, string>> results = new List<IDictionary<string, string>>();
+            results = portalObj.getCovidCalendar(day);
+            return Json(results);
+        }
+
         public JsonResult getSafetyDays()
         {
             IDictionary<string, string> results = new Dictionary<string, string>();
