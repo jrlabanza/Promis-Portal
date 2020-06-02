@@ -132,24 +132,24 @@ function refreshContent() {
     );
 
     $.post(
-    base_url + "Portal/getCovidCalendar",
-    {
-        "day":day
-    },
-    function (data) {
-        var message = "";
-        var answer = "";
-        $.each(data, function (i, safety_data) {
- 
-            message = safety_data.covidMessage;
-            answer = safety_data.covidAnswers;
-            $(".covid-message").html(message);
-            $(".covid-answer").html(answer);
+        base_url + "Portal/getCovidCalendar",
+        {
+            "day":day
+        },
+        function (data) {
+            var message = "";
+            var answer = "";
+            $.each(data, function (i, safety_data) {
+             
+                message = safety_data.covidMessage;
+                answer = safety_data.covidAnswers;
+                $(".covid-message").html(message);
+                $(".covid-answer").html(answer);
             
-        });
+            });
 
-    }
-);
+        }
+    );
 
     $.post(
         base_url + "Portal/getSafetyDays",
@@ -212,6 +212,7 @@ setInterval(function () {
 }, 600000);
 
 if (newsID != null) {
+
     $.post(
         base_url + "Portal/getBroadcastByID",
         {
@@ -219,15 +220,16 @@ if (newsID != null) {
         },
         function (getBroadcastByID) {
             console.log(getBroadcastByID);
-            $("#broadcast-image").attr("src", "../uploads/" + getBroadcastByID.photo_header);
-            $("#broadcast-header").html("'" + getBroadcastByID.subject + "'");
-            $("#broadcast-body").html(getBroadcastByID.body);
-            console.log(getBroadcastByID.hyperlink);
 
+            $("#broadcast-header").html("'" + getBroadcastByID.subject + "'");
+            $("#broadcast-image").attr("src", "../uploads/" + getBroadcastByID.photo_header);
+            $("#broadcast-body").val(getBroadcastByID.body);
+            
             if (getBroadcastByID.hyperlink != "") {
                 var hyperlink = "<a href='" + getBroadcastByID.hyperlink + "' class='btn btn-lg' target='_blank'>" + getBroadcastByID.hyperlink_header + "</a>";
                 $("#add-hyperlink").append(hyperlink)
             }
+
             if (getBroadcastByID.additional_attachment != "") {
                 var additional_attachment = "<a href='../uploads/" + getBroadcastByID.additional_attachment + "' class='btn btn-lg' target='_blank'>" + getBroadcastByID.additional_attachment_header + "</a>";
                 $("#add-additional-attachment").append(additional_attachment)
